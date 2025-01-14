@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierre Papier Ciseaux</title>
+    <script defer src="./script/main.js"></script>
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Pierre | Papier | Ciseaux</h1>
+    </header>
+    <main>
+      <section id="mainSection">
+        <div id="human" class="joueur">
+          <div class="name">
+            <h6>Vous</h6>
+          </div>
+          <div class="images">
+            <img src="./img/rock.png" alt="Pierre" id="hPierre" />
+            <img src="./img/washing-hands.png" alt="Papier" id="hPapier" />
+            <img src="./img/scissors.png" alt="Ciseaux" id="hCiseaux" />
+          </div>
+          <div class="points" id="hpoints"></div>
+        </div>
+        <div id="nomansland">
+          <p id="result">Cliquez sur une des images à gauche pour jouer</p>
+        </div>
+        <div id="computer" class="joueur">
+          <div class="name">
+            <h6>Ordinateur</h6>
+          </div>
+          <div class="images">
+            <img
+              src="./img/question-mark.png"
+              alt="réponse de l'ordinateur"
+              id="oHand"
+            />
+            <!-- <img src="./img/rock.png" alt="Pierre" id="oPierre">
+                    <img src="./img/washing-hands.png" alt="Papier" id="oPapier">
+                    <img src="./img/scissors.png" alt="Ciseaux" id="oCiseaux"> -->
+          </div>
+          <div class="points" id="opoints"></div>
+        </div>
+      </section>
+      <section id="footSection">
+        <div id="statistiques">
+          <h6>Statistiques :</h6>
+          <p id="statH"></p>
+          <p id="statO"></p>
+        </div>
+        <div id="rejouer">
+          <picture>
+            <!-- <caption>rejouer</caption> -->
+            <img src="./img/refresh.png" alt="rejouer" id="refresh" />
+          </picture>
+        </div>
+        <div id="effacer">
+          <picture>
+            <!-- <caption>effacer</caption> -->
+            <img src="./img/eraser.png" alt="effacer" id="erase" />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© blagasse — 6-7 mai 2024</p>
+      <!-- images by Freepik (flaticon.com) -->
+    </footer>
+  </body>
+</html>
